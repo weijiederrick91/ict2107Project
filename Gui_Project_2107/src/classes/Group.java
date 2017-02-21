@@ -8,9 +8,26 @@ public class Group {
 	private String groupName;
 	private ArrayList<String> listofUsers;
 	private int portNo;
+	private String groupIpAddress;
 	
+	public String getGroupIpAddress() {
+		return groupIpAddress;
+	}
+
+	public void setGroupIpAddress(String groupIpAddress) {
+		this.groupIpAddress = groupIpAddress;
+	}
+
 	public Group (String groupName){
 		this.groupName = groupName;
+	}
+	
+	public Group (int groupId, String groupName, ArrayList<String>listOfUsers, int portNo){
+		this.groupId = groupId;
+		this.groupName = groupName;
+		this.listofUsers = listOfUsers;
+		this.portNo = portNo;
+		 
 	}
 	
 	public Group() {
